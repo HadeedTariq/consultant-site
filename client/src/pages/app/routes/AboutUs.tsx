@@ -27,6 +27,7 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ContactUsSection } from "../components/ContactUsSection";
+import { SEO } from "@/components/SEO";
 
 const PRACTICE_EVOLUTION = [
   "Auditing & Assurance",
@@ -144,6 +145,11 @@ export default function AboutUsPage() {
       {/* =====================================================================
           1. ABOUT US HERO BANNER
       ===================================================================== */}
+      <SEO
+        title="Our Story & Philosophy"
+        description="Built on the ethos of 'Organization Above Individual', we deliver big-firm technical depth in accountancy, HR, and corporate advisory at affordable scales."
+        url="https://helpinghandconsultant.site/about-us"
+      />
       <section className="relative overflow-hidden bg-slate-950 text-white pt-16 pb-24 md:py-28">
         {/* Background Pattern & Glows */}
         <div className="absolute inset-0 bg-[radial-gradient(#10b981_1px,transparent_1px)] [background-size:32px_32px] opacity-10" />

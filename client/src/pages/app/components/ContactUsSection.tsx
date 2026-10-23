@@ -41,6 +41,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Badge } from "@/components/ui/badge";
+import { SEO } from "@/components/SEO";
 
 const contactFormSchema = z.object({
   fullName: z.string().min(2, "Please enter your full name."),
@@ -510,5 +511,14 @@ export function ContactUsSection({ isStandalonePage = false }: ContactUsProps) {
 
 // Standalone Page Wrapper if you mount it on /contact-us
 export default function ContactUsPage() {
-  return <ContactUsSection isStandalonePage={true} />;
+  return (
+    <>
+      <SEO
+        title="Get in Touch | Direct WhatsApp Desk"
+        description="Reach out to Helping Hand Consultant for audit, tax, and HR outsourcing. Direct WhatsApp consultation at 0313-5588989. Located in Lahore, Pakistan."
+        url="https://helpinghandconsultant.site/contact-us"
+      />
+      <ContactUsSection isStandalonePage={true} />;
+    </>
+  );
 }

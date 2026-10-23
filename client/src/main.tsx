@@ -5,11 +5,14 @@ import "@/styles/globals.css";
 import Provider from "./utils/Provider.tsx";
 import "@uiw/react-markdown-editor/markdown-editor.css";
 import "@uiw/react-markdown-preview/markdown.css";
+import { HelmetProvider } from "react-helmet-async";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <Provider>
-      <App />
-    </Provider>
-  </StrictMode>
+    <HelmetProvider>
+      <Provider>
+        <App />
+      </Provider>
+    </HelmetProvider>
+  </StrictMode>,
 );

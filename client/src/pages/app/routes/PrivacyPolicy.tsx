@@ -23,6 +23,7 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ContactUsSection } from "../components/ContactUsSection";
+import { SEO } from "@/components/SEO";
 
 const PRIVACY_SECTIONS = [
   {
@@ -112,6 +113,11 @@ const PRIVACY_SECTIONS = [
 export default function PrivacyPolicyPage() {
   return (
     <main className="min-h-screen bg-white text-slate-900 selection:bg-emerald-600 selection:text-white">
+      <SEO
+        title="Privacy Policy & Data Secrecy"
+        description="Read our strict non-disclosure guarantee. We protect client financial records, HR credentials, and candidate data under Pakistani compliance laws."
+        url="https://helpinghandconsultant.site/privacy-policy"
+      />
       {/* =====================================================================
           1. HERO BANNER
       ===================================================================== */}

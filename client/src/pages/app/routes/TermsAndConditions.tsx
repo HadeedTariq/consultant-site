@@ -22,6 +22,7 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ContactUsSection } from "../components/ContactUsSection";
+import { SEO } from "@/components/SEO";
 
 const TERMS_SECTIONS = [
   {
@@ -110,6 +111,11 @@ export default function TermsAndConditionsPage() {
       {/* =====================================================================
           1. HERO BANNER
       ===================================================================== */}
+      <SEO
+        title="Terms of Professional Engagement"
+        description="Standard terms and conditions for HR recruitment, audit, taxation, and BPO outsourcing engagements with Helping Hand Consultant."
+        url="https://helpinghandconsultant.site/terms-conditions"
+      />
       <section className="relative overflow-hidden bg-slate-950 text-white pt-16 pb-20 md:py-24">
         <div className="absolute inset-0 bg-[radial-gradient(#10b981_1px,transparent_1px)] [background-size:32px_32px] opacity-10" />
         <div className="absolute -bottom-32 left-1/4 h-80 w-80 rounded-full bg-emerald-500/15 blur-3xl pointer-events-none" />

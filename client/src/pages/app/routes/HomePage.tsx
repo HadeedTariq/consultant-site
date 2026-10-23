@@ -38,6 +38,7 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ContactUsSection } from "../components/ContactUsSection";
+import { SEO } from "@/components/SEO";
 
 // ---------------------------------------------------------------------------
 // Data Extracted Directly from "Helping Hand Consultant Profile Final.pdf"
@@ -273,6 +274,11 @@ export default function HomePage() {
 
   return (
     <main className="min-h-screen bg-white text-slate-900 selection:bg-emerald-600 selection:text-white">
+      <SEO
+        title="Strategic HR, Audit & Tax Advisory in Lahore"
+        description="Helping Hand Consultant provides proactive value addition in HR Recruitment, Statutory Audit, Taxation, and Financial Advisory across public and private sectors."
+        url="https://helpinghandconsultant.site"
+      />
       {/* =====================================================================
           1. HERO BANNER SECTION
       ===================================================================== */}
