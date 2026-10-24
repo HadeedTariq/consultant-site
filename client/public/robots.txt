@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Link directly to your XML sitemap
+Sitemap: https://helpinghandconsultant.site/sitemap.xml
